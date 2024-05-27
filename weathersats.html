@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather satellites</title>
+	<link rel="stylesheet" href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+     <body style="text-align: center;" onkeyup="changeBackgroundImage(event)">
+     <h1>Weather satellites</h1>
+	<h2>Overview</h2>
+	<hr class="solid">
+	<p>Here is a short overview of weather satellites. The first weather satellite was TIROS-1, launched in 1960. It wasn’t until 1963 that TIROS-8 was launched with the ubiquitous APT (Automatic Picture Transmission) system. APT transmits on the VHF band and was widely used on weather satellites. In fact, it is still used up to this day, with the last satellite launched being NOAA-19 (launched in 2009). APT resolution was limited to 5 km per pixel, so there was also HRPT (High Rate Picture Transmission). HRPT is transmitted on the L-band (or the S-Band if you prefer it that way) and has a maximum resolution of 1 km per pixel. It comes in multiple flavors:</p>
+	<il>
+		<li>Regular HRPT: Used on NOAA 15, 18, 19 and on Meteor M2 satellites.</p>
+		<li>AHRPT (Advanced High Rate Picture Transmition): Used on Metop B and C. </p>
+		<li>CHRPT (Color or China High Rate Picture Transmition): Used on Feng Yun 3C.</p>
+  	</il>
+	<p>In the 1990s, APT became more outdated and required a replacement, so LRPT was developed. Unlike APT, which was analog, LRPT was digital and included error correction. In 2006, Metop-A was launched and brought high-resolution imagery on VHF… for a while. However, it turned out that LRPT interfered with some instruments on Metop-A, so it was disabled. Later, Meteor M2 was launched with LRPT. But like many Russian endeavors, it worked for a while, and then it didn’t. So a new one was launched, which also worked for a while, and then again it didn’t. And the cycle continues to this day. All of the satellites I’ve discussed orbit in Low Earth Orbit (LEO), but there are also satellites in Geostationary Orbit (GEO). Unfortunately, the situation in Europe regarding GEO satellites is quite sad. There is GOES in the Western hemisfere, Meteosat over Europe and Africa. Also there is Feng Yun 2H and 4A as a part of the belt and road initiative (as I like to call it Belt and Rob), Elektro L-N3 and GK-2A over Asia. None of these you can pick up easaly over Europe, so I won't really get into detail.</p>
+
+	<img src="Images/NOAA APT/NOAA15_24052024_normal.png" style="width:800px;height:550px;">
+	<p>An example of an APT image (taken from NOAA 15).</p>
+	<img src="Images/Meteor LRPT/MeteorM2-4_12042024_1510_normal.jpg" style="width:650px;height:800px;">
+	<p>An example on an LRPT image (Taken from Meteor M2-4).</p>
+    <hr class="solid">
+
+	<h2>My setup</h2>
+		<p>My setup includes the following:</p>
+	<il>
+		<li>RTL-SDR Blog V4</li>
+      		<li>V-Dipole antenna</li>
+      		<li>SDR++ and noaa-apt for APT</li>
+      		<li>SatDump for LRPT</li>
+	</il>
+		<p>I don’t have an HRPT setup yet. I have ordered all the parts, but God knows when they will arrive. I am assuming that everything will arrive by late July, but you never know with international shipping.</p>
+		
+		<p>If you want to see what see what I have received, then check out my <a rel="me" href="https://mastodon.social/@rfinterest">Mastodon</a>!</p>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+	<a href="index.html" target="_blank">[Return to the homepage]</a>
+	<footer>
+        <p>&copy; MMXXIV rfinterest</p>
+   </body>
+</html>
